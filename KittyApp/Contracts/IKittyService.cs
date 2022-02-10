@@ -6,6 +6,5 @@ namespace KittyApp.Contracts
     {
         Task<byte[]> FlipKittyImage(string imageUrl);
         Task<byte[]> RotateKittyImageWithText(string imageUrl, string text);
-
     }
 }

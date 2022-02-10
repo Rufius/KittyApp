@@ -32,7 +32,6 @@ namespace KittyApp.Services
             string url = string.Concat(imageUrl, "//", text.Trim());
 
             return await GetAndTransformImage(url, RotateFlipType.Rotate90FlipNone);
-
         }
 
         private async Task<byte[]> GetAndTransformImage(string imageUrl, RotateFlipType rotateFlipType)

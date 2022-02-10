@@ -16,6 +16,7 @@ namespace KittyApp
             _logger = logger;
             _next = next;
         }
+
         public async Task InvokeAsync(HttpContext httpContext)
         {
             try
@@ -28,6 +29,7 @@ namespace KittyApp
                 await HandleExceptionAsync(httpContext, ex);
             }
         }
+
         private async Task HandleExceptionAsync(HttpContext context, Exception exception)
         {
             context.Response.ContentType = "application/json";
