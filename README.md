@@ -20,8 +20,17 @@ In a real project, it would be an Entity Framework (or another ORM) context fetc
 Here I used in-memory static collection of users with the one predefined user 
 (username="james007", password="CasinoRoyale").
 
+The current authentication model is Basic Authentication.
+
 External dependencies are three Nuget packages:
 
 - Swashbuckle.AspNetCore - Swagger to automatically generate API documentation and facilitate debugging
 - Newtonsoft.Json- to JSON serialize error messages
 - System.Drawing.Common - to manipulate and transform images
+
+Further extensions planned:
+- add more authentication types
+- implement logger (it is presented currenctly as dumb object)
+- UI front-end (considering using Angular)
+- use real db (relational or no sql)
+- add new features (another types of photos, change color scheme etc.)
